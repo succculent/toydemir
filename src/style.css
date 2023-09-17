@@ -1,0 +1,113 @@
+html,
+body
+{
+  overflow: hidden;
+  background-color: rgb( 255, 255, 255 );
+  margin: 0;
+  padding: 0;
+  /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: Lato, Arial, sans-serif;
+  cursor: crosshair;
+}
+
+.webgl
+{
+  outline: none;
+  image-rendering: optimizeSpeed;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.tsCanvas
+{
+  z-index: 2;
+  mix-blend-mode: screen;
+  opacity: 0.15;
+}
+
+.AV
+{
+  z-index: 1;
+  mix-blend-mode: difference;
+}
+
+.box {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  mix-blend-mode: difference;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  font-size:medium;
+}
+
+.links {
+  z-index: 5;
+  position: absolute;
+  bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  mix-blend-mode: difference;
+  font-size: small;
+  width: 100vw;
+}
+
+a {
+  font-weight:bolder;
+  color: white;
+  mix-blend-mode: difference;
+  text-decoration: none;
+  height: 1.5em;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+img {
+  filter: invert(100%);
+  height: 25px;
+  z-index: 20;
+  background-blend-mode: difference;
+  margin-top: -0.4em;
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+  z-index: 4;
+}
+
+.contact-visible {
+  color: white;
+  mix-blend-mode: difference;
+  display: flex;
+  z-index: 4;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 0.7em;
+}
